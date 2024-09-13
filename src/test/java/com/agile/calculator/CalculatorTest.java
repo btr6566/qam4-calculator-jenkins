@@ -14,7 +14,13 @@ public class CalculatorTest {
 	@Test
 	public void subtractTest() {
 		calculator = new Calculator();
-		int expected = 2;
+		
+		//Orig - passes
+		//int expected = 2;
+		
+		//Force a Fail
+		int expected = 42;
+		
 		int actual = calculator.subtract("5,3");
 		assertEquals(expected, actual);
 	}
